@@ -1,0 +1,174 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPr/YjXS7VadzQpgmXM2hWs",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/rainardw/drawing_app/blob/main/drawing_app\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 349
+        },
+        "id": "EGyPOXVMD1A7",
+        "outputId": "b7111a69-5692-474c-8f4b-5d1283a582ca"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: Pillow in /usr/local/lib/python3.12/dist-packages (11.3.0)\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "TclError",
+          "evalue": "no display name and no $DISPLAY environment variable",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTclError\u001b[0m                                  Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-4287382644.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m    105\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    106\u001b[0m \u001b[0;32mif\u001b[0m \u001b[0m__name__\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m\"__main__\"\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 107\u001b[0;31m     \u001b[0mroot\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mtk\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mTk\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    108\u001b[0m     \u001b[0mapp\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mDrawingApp\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mroot\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    109\u001b[0m     \u001b[0mroot\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmainloop\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/lib/python3.12/tkinter/__init__.py\u001b[0m in \u001b[0;36m__init__\u001b[0;34m(self, screenName, baseName, className, useTk, sync, use)\u001b[0m\n\u001b[1;32m   2347\u001b[0m                 \u001b[0mbaseName\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mbaseName\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mext\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2348\u001b[0m         \u001b[0minteractive\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mFalse\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 2349\u001b[0;31m         \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtk\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0m_tkinter\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcreate\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mscreenName\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mbaseName\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mclassName\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0minteractive\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mwantobjects\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0museTk\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0msync\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0muse\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   2350\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0m_debug\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   2351\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mtk\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msettrace\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0m_print_command\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTclError\u001b[0m: no display name and no $DISPLAY environment variable"
+          ]
+        }
+      ],
+      "source": [
+        "!pip install Pillow\n",
+        "\n",
+        "\n",
+        "import tkinter as tk\n",
+        "from PIL import Image, ImageDraw\n",
+        "import os\n",
+        "\n",
+        "class DrawingApp:\n",
+        "    def __init__(self, root):\n",
+        "        self.root = root\n",
+        "        self.root.title(\"PinkBrush 💖 - Drawing App by codingwrann\")\n",
+        "        self.root.geometry(\"800x600\")\n",
+        "        self.root.configure(bg=\"#FFE6EB\")  # pink soft background\n",
+        "\n",
+        "        # Warna default\n",
+        "        self.current_color = \"#FF69B4\"  # pink cerah\n",
+        "        self.brush_size = 5\n",
+        "\n",
+        "        # Buat canvas\n",
+        "        self.canvas = tk.Canvas(root, bg=\"white\", cursor=\"cross\")\n",
+        "        self.canvas.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)\n",
+        "\n",
+        "        # Buat gambar virtual untuk simpan (pakai Pillow)\n",
+        "        self.image = Image.new(\"RGB\", (800, 600), \"white\")\n",
+        "        self.draw = ImageDraw.Draw(self.image)\n",
+        "\n",
+        "        # Binding mouse\n",
+        "        self.canvas.bind(\"<B1-Motion>\", self.paint)\n",
+        "        self.canvas.bind(\"<ButtonRelease-1>\", self.reset)\n",
+        "\n",
+        "        # Panel kontrol\n",
+        "        self.create_controls()\n",
+        "\n",
+        "        self.old_x = None\n",
+        "        self.old_y = None\n",
+        "\n",
+        "    def paint(self, event):\n",
+        "        if self.old_x and self.old_y:\n",
+        "            # Gambar di canvas\n",
+        "            self.canvas.create_line(\n",
+        "                self.old_x, self.old_y, event.x, event.y,\n",
+        "                width=self.brush_size, fill=self.current_color,\n",
+        "                capstyle=tk.ROUND, smooth=tk.TRUE\n",
+        "            )\n",
+        "            # Gambar juga di objek Pillow (untuk simpan nanti)\n",
+        "            self.draw.line(\n",
+        "                [self.old_x, self.old_y, event.x, event.y],\n",
+        "                fill=self.current_color, width=self.brush_size\n",
+        "            )\n",
+        "        self.old_x = event.x\n",
+        "        self.old_y = event.y\n",
+        "\n",
+        "    def reset(self, event):\n",
+        "        self.old_x, self.old_y = None, None\n",
+        "\n",
+        "    def create_controls(self):\n",
+        "        control_frame = tk.Frame(self.root, bg=\"#FFE6EB\")\n",
+        "        control_frame.pack(pady=5)\n",
+        "\n",
+        "        # Tombol warna\n",
+        "        tk.Button(control_frame, bg=\"#FF69B4\", width=3, height=1,\n",
+        "                  command=lambda: self.set_color(\"#FF69B4\")).pack(side=tk.LEFT, padx=2)\n",
+        "        tk.Button(control_frame, bg=\"#7FBF90\", width=3, height=1,  # hijau pastel\n",
+        "                  command=lambda: self.set_color(\"#7FBF90\")).pack(side=tk.LEFT, padx=2)\n",
+        "        tk.Button(control_frame, bg=\"black\", width=3, height=1,\n",
+        "                  command=lambda: self.set_color(\"black\")).pack(side=tk.LEFT, padx=2)\n",
+        "        tk.Button(control_frame, bg=\"blue\", width=3, height=1,\n",
+        "                  command=lambda: self.set_color(\"blue\")).pack(side=tk.LEFT, padx=2)\n",
+        "\n",
+        "        # Ukuran kuas\n",
+        "        tk.Label(control_frame, text=\"Ukuran:\", bg=\"#FFE6EB\", font=(\"Arial\", 10)).pack(side=tk.LEFT, padx=10)\n",
+        "        size_var = tk.IntVar(value=5)\n",
+        "        size_scale = tk.Scale(control_frame, from_=1, to=30, orient=tk.HORIZONTAL,\n",
+        "                              variable=size_var, bg=\"#FFE6EB\", highlightthickness=0,\n",
+        "                              command=lambda v: setattr(self, 'brush_size', int(v)))\n",
+        "        size_scale.pack(side=tk.LEFT, padx=5)\n",
+        "\n",
+        "        # Tombol simpan\n",
+        "        tk.Button(control_frame, text=\"💾 Simpan\", bg=\"#7FBF90\", fg=\"white\",\n",
+        "                  font=(\"Arial\", 10, \"bold\"), command=self.save_image).pack(side=tk.RIGHT, padx=10)\n",
+        "\n",
+        "        # Tombol hapus\n",
+        "        tk.Button(control_frame, text=\"🗑️ Hapus\", bg=\"#FF9EB1\", fg=\"white\",\n",
+        "                  font=(\"Arial\", 10, \"bold\"), command=self.clear_canvas).pack(side=tk.RIGHT, padx=5)\n",
+        "\n",
+        "    def set_color(self, color):\n",
+        "        self.current_color = color\n",
+        "\n",
+        "    def clear_canvas(self):\n",
+        "        self.canvas.delete(\"all\")\n",
+        "        self.image = Image.new(\"RGB\", (800, 600), \"white\")\n",
+        "        self.draw = ImageDraw.Draw(self.image)\n",
+        "\n",
+        "    def save_image(self):\n",
+        "        # Simpan ke folder 'gambar' (buat jika belum ada)\n",
+        "        folder = \"gambar\"\n",
+        "        if not os.path.exists(folder):\n",
+        "            os.makedirs(folder)\n",
+        "\n",
+        "        filename = os.path.join(folder, \"drawing_pinkbrush.png\")\n",
+        "        self.image.save(filename)\n",
+        "        print(f\"✅ Gambar disimpan di: {filename}\")\n",
+        "        # Tampilkan notifikasi kecil\n",
+        "        self.root.title(f\"PinkBrush 💖 - Tersimpan: {filename}\")\n",
+        "\n",
+        "if __name__ == \"__main__\":\n",
+        "    root = tk.Tk()\n",
+        "    app = DrawingApp(root)\n",
+        "    root.mainloop()"
+      ]
+    }
+  ]
+}
